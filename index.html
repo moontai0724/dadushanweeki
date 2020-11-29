@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大肚山 wee き</title>
+
+    <!-- Normalize.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css">
+
+    <!-- Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="index.css">
+    <script type="module" src="index.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <div v-if="menuOpened" @click="menuOpened = false" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0;"></div>
+      <div id="sidebar">
+        <div id="sidebar-box" :class="{ open: menuOpened }">
+          <div id="sidebar-content">
+            <div><a href="#report">問題回報</a></div>
+            <div><a href="#about">關於我們</a></div>
+          </div>
+        </div>
+        <div id="menu-button" @click="menuOpened = !menuOpened">
+          <img src="./assets/menu-icon.svg" alt="Menu icon" title="Menu">
+        </div>
+      </div>
+
+      <div id="popup-menu"></div>
+    </div>
+  </body>
+
+</html>

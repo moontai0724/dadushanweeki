@@ -1,0 +1,61 @@
+body {
+  background-color: #ECEDEF;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./assets/mountain_1080p.gif');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#menu-button {
+  cursor: pointer;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  height: 100vh;
+}
+
+#menu-button {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+}
+
+#sidebar #sidebar-box.open {
+  right: 0px;
+}
+
+#sidebar #sidebar-box {
+  background-color: #3B3B3B;
+  position: relative;
+  right: -200px;
+  width: 200px;
+  height: 100vh;
+  transition: all 0.2s ease-in-out;
+}
+
+#sidebar #sidebar-content {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  padding-bottom: 20px;
+  max-height: calc(100vh - 80px);
+  overflow: auto;
+}
+
+#sidebar #sidebar-content div {
+  padding: 10px;
+  text-align: center;
+}
+
+#sidebar #sidebar-content a {
+  color: #EDEDED;
+}
