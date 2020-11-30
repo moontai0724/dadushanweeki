@@ -9,7 +9,7 @@ function initialize() {
       return {
         menuOpened: false,
         popupOpened: true,
-        currentPlace: undefined,
+        currentPlace: PLACES[1],
         width: 1920,
         height: 1080,
       };
@@ -32,8 +32,8 @@ function initialize() {
 }
 
 function registerComponents() {
-  Vue.component("popup-template", {
-    template: document.getElementById("popup"),
+  Vue.component("popup", {
+    template: document.getElementById("template-popup-full"),
     props: ["place"],
     methods: {
       keyDownHandler(event) {

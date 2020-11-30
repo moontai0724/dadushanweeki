@@ -18,6 +18,7 @@
 
     <!-- Custom -->
     <link rel="stylesheet" href="index.css">
+    <script src="data.js"></script>
     <script src="index.js"></script>
   </head>
 
@@ -28,8 +29,9 @@
       <div id="sidebar">
         <div id="sidebar-box" :class="{ open: menuOpened }">
           <div id="sidebar-content">
-            <div><a href="#report">問題回報</a></div>
-            <div><a href="#about">關於我們</a></div>
+            <div><a href="#referances">參考資料</a></div>
+            <!-- <div><a href="#report">問題回報</a></div> -->
+            <!-- <div><a href="#about">關於我們</a></div> -->
           </div>
         </div>
         <div id="menu-button" @click="menuOpened = !menuOpened">
@@ -40,56 +42,14 @@
       <popup v-if="popupOpened" :place="currentPlace" @close="popupOpened = false;"></popup>
     </div>
 
-    <template id="popup-template">
-      <div id="popup-background">
+    <template id="template-popup-full">
+      <div id="popup-background" :data-placeId="place.id">
         <div id="popup-window">
           <div id="popup-title">
-            <h1>大肚臺地</h1>
+            <h1>{{ place.title }}</h1>
           </div>
           <div id="popup-content">
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
-            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p v-for="(description, index) in place.descriptions" :key="index">{{ description }}</p>
           </div>
           <div id="popup-close">
             <span @click="closePopup">[ESC] 返回</span>
