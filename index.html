@@ -12,13 +12,18 @@
     <!-- Vue -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
+    <!-- Noto-Sans Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
     <!-- Custom -->
     <link rel="stylesheet" href="index.css">
-    <script type="module" src="index.js"></script>
+    <script src="index.js"></script>
   </head>
 
   <body>
     <div id="app">
+      <img id="mountain" ref="mountain" src="./assets/mountain_1080p.gif" alt="Mountain" draggable="false">
       <div v-if="menuOpened" @click="menuOpened = false" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0;"></div>
       <div id="sidebar">
         <div id="sidebar-box" :class="{ open: menuOpened }">
@@ -28,12 +33,70 @@
           </div>
         </div>
         <div id="menu-button" @click="menuOpened = !menuOpened">
-          <img src="./assets/menu-icon.svg" alt="Menu icon" title="Menu">
+          <img src="./assets/menu-icon.svg" alt="Menu icon" title="Menu" draggable="false">
         </div>
       </div>
 
-      <div id="popup-menu"></div>
+      <popup v-if="popupOpened" :place="currentPlace" @close="popupOpened = false;"></popup>
     </div>
+
+    <template id="popup-template">
+      <div id="popup-background">
+        <div id="popup-window">
+          <div id="popup-title">
+            <h1>大肚臺地</h1>
+          </div>
+          <div id="popup-content">
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+            <p>大肚區名由來於拍瀑拉 (Papora) 平埔族大肚社社名 Tatuturo 的譯音。</p>
+          </div>
+          <div id="popup-close">
+            <span @click="closePopup">[ESC] 返回</span>
+          </div>
+        </div>
+      </div>
+    </template>
   </body>
 
 </html>
