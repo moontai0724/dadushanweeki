@@ -7,8 +7,10 @@ function initialize() {
     el: document.getElementById("app"),
     data() {
       return {
+        mountain: MOUNTAIN,
+        places: PLACES,
         menuOpened: false,
-        currentPlace: PLACES[0],
+        currentPlace: undefined,
         width: 1920,
         height: 1080,
       };

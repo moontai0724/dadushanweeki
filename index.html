@@ -24,8 +24,19 @@
 
   <body>
     <div id="app">
-      <img id="mountain" ref="mountain" src="./assets/mountain_1080p.gif" alt="Mountain" draggable="false">
-      <div v-if="menuOpened" @click="menuOpened = false" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0;"></div>
+      <div id="window">
+        <div id="container">
+          <img id="mountain" ref="mountain" src="./assets/mountain_1080p.gif" alt="Mountain" draggable="false"
+            @click.self="currentPlace = mountain;">
+          <div>
+            <img v-for="place in places" :key="place.id" :src="place.icon" :alt="place.title" :title="place.title"
+              draggable="false" @click="currentPlace = place;" style="position: absolute;"
+              :style="place.iconStyle" class="place">
+          </div>
+        </div>
+      </div>
+
+      <div v-if="menuOpened" @click="menuOpened = false;" style="position: fixed; inset: 0;"></div>
       <div id="sidebar">
         <div id="sidebar-box" :class="{ open: menuOpened }">
           <div id="sidebar-content">
@@ -39,7 +50,9 @@
         </div>
       </div>
 
-      <popup v-if="currentPlace" :place="currentPlace" @close="currentPlace = undefined;"></popup>
+      <transition name="fade">
+        <popup v-if="currentPlace" :place="currentPlace" @close="currentPlace = undefined;"></popup>
+      </transition>
     </div>
 
     <template id="template-popup">
