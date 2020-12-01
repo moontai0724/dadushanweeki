@@ -8,8 +8,7 @@ function initialize() {
     data() {
       return {
         menuOpened: false,
-        popupOpened: true,
-        currentPlace: PLACES[1],
+        currentPlace: PLACES[0],
         width: 1920,
         height: 1080,
       };
@@ -20,7 +19,7 @@ function initialize() {
         this.width = mountain.width;
         this.height = mountain.height;
         console.log("Mountain size changed to ", this.width, this.height);
-      }
+      },
     },
     created() {
       window.addEventListener("resize", this.resizeHandler);
@@ -32,9 +31,18 @@ function initialize() {
 }
 
 function registerComponents() {
+  registerPopup();
+}
+
+function registerPopup() {
   Vue.component("popup", {
-    template: document.getElementById("template-popup-full"),
+    template: document.getElementById("template-popup"),
     props: ["place"],
+    data() {
+      return {
+        isHalf: this.place.icon && this.place.icon.length > 0
+      };
+    },
     methods: {
       keyDownHandler(event) {
         if (event.keyCode === 27)

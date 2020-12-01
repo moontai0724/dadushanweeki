@@ -39,19 +39,26 @@
         </div>
       </div>
 
-      <popup v-if="popupOpened" :place="currentPlace" @close="popupOpened = false;"></popup>
+      <popup v-if="currentPlace" :place="currentPlace" @close="currentPlace = undefined;"></popup>
     </div>
 
-    <template id="template-popup-full">
-      <div id="popup-background" :data-placeId="place.id">
-        <div id="popup-window">
-          <div id="popup-title">
-            <h1>{{ place.title }}</h1>
+    <template id="template-popup">
+      <div class="popup background" :data-placeId="place.id">
+        <div class="popup window">
+          <div class="popup body">
+            <div v-if="isHalf" class="popup icon">
+              <img :src="place.icon" :alt="place.title" :title="place.title" draggable="false">
+            </div>
+            <div class="popup article" :class="{ half: isHalf }">
+              <div class="popup title">
+                <h1>{{ place.title }}</h1>
+              </div>
+              <div class="popup content">
+                <p v-for="(description, index) in place.descriptions" :key="index">{{ description }}</p>
+              </div>
+            </div>
           </div>
-          <div id="popup-content">
-            <p v-for="(description, index) in place.descriptions" :key="index">{{ description }}</p>
-          </div>
-          <div id="popup-close">
+          <div class="popup footer">
             <span @click="closePopup">[ESC] 返回</span>
           </div>
         </div>
