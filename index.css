@@ -171,6 +171,21 @@ img {
   overflow: auto;
 }
 
+.popup.referances {
+  margin-top: 5em;
+  margin-bottom: 10px;
+}
+
+.popup.referances a::before {
+  content: '\2022';
+  color: initial;
+}
+
+.popup.referances a {
+  margin-right: 5px;
+  text-decoration: none;
+}
+
 .popup.footer {
   padding: 10px;
   flex: 0 0 auto;
@@ -184,6 +199,7 @@ img {
 
 .place {
   cursor: pointer;
+  position: absolute;
 }
 
 .place img {

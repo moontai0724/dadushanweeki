@@ -30,8 +30,7 @@
             @click.self="currentPlace = mountain;">
           <div>
             <img v-for="place in places" :key="place.id" :src="place.icon" :alt="place.title" :title="place.title"
-              draggable="false" @click="currentPlace = place;" style="position: absolute;"
-              :style="place.iconStyle" class="place">
+              draggable="false" @click="currentPlace = place;" :style="place.iconStyle" class="place">
           </div>
         </div>
       </div>
@@ -40,9 +39,9 @@
       <div id="sidebar">
         <div id="sidebar-box" :class="{ open: menuOpened }">
           <div id="sidebar-content">
-            <div><a href="#referances">參考資料</a></div>
+            <!-- <div><a href="#referances">參考資料</a></div> -->
             <!-- <div><a href="#report">問題回報</a></div> -->
-            <!-- <div><a href="#about">關於我們</a></div> -->
+            <div><a href="#about">關於我們</a></div>
           </div>
         </div>
         <div id="menu-button" @click="menuOpened = !menuOpened">
@@ -68,6 +67,11 @@
               </div>
               <div class="popup content">
                 <p v-for="(description, index) in place.descriptions" :key="index">{{ description }}</p>
+                <div v-if="place.referances.length > 0" class="popup referances">
+                  <span>參考資料：</span>
+                  <a v-for="referance in place.referances" :href="referance.url"
+                    target="_blank">{{ referance.title }}</a>
+                </div>
               </div>
             </div>
           </div>
