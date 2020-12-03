@@ -11,6 +11,7 @@ function initialize() {
         places: PLACES,
         menuOpened: false,
         currentPlace: undefined,
+        aboutUsOpened: false,
         width: 1920,
         height: 1080,
       };
@@ -33,16 +34,17 @@ function initialize() {
 }
 
 function registerComponents() {
-  registerPopup();
+  registerPopup("popup", "template-popup", ["place"]);
+  registerPopup("about-us", "template-about-us");
 }
 
-function registerPopup() {
-  Vue.component("popup", {
-    template: document.getElementById("template-popup"),
-    props: ["place"],
+function registerPopup(componentName, componentId, props) {
+  Vue.component(componentName, {
+    template: document.getElementById(componentId),
+    props: props,
     data() {
       return {
-        isHalf: this.place.icon && this.place.icon.length > 0
+        isHalf: this.place && this.place.icon && this.place.icon.length > 0
       };
     },
     methods: {

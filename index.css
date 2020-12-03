@@ -197,6 +197,12 @@ img {
   margin: 0 auto;
 }
 
+.popup.about.body {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-align: center;
+}
+
 .place {
   cursor: pointer;
   position: absolute;

@@ -41,7 +41,7 @@
           <div id="sidebar-content">
             <!-- <div><a href="#referances">參考資料</a></div> -->
             <!-- <div><a href="#report">問題回報</a></div> -->
-            <div><a href="#about">關於我們</a></div>
+            <div><a href="#about" @click="aboutUsOpened = true;">關於我們</a></div>
           </div>
         </div>
         <div id="menu-button" @click="menuOpened = !menuOpened">
@@ -51,11 +51,12 @@
 
       <transition name="fade">
         <popup v-if="currentPlace" :place="currentPlace" @close="currentPlace = undefined;"></popup>
+        <about-us v-if="aboutUsOpened" @close="aboutUsOpened = false;"></about-us>
       </transition>
     </div>
 
     <template id="template-popup">
-      <div class="popup background" :data-placeId="place.id">
+      <div class="popup background">
         <div class="popup window">
           <div class="popup body">
             <div v-if="isHalf" class="popup icon">
@@ -77,6 +78,19 @@
           </div>
           <div class="popup footer">
             <span @click="closePopup" class="noselect">[ESC] 返回</span>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <template id="template-about-us">
+      <div class="popup background">
+        <div class="popup window">
+          <div class="popup about body">
+            <span>待補上</span>
+          </div>
+          <div class="popup footer">
+            <span @click="aboutUsOpened = false;" class="noselect">[ESC] 返回</span>
           </div>
         </div>
       </div>
