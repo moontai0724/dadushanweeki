@@ -58,6 +58,9 @@ function registerPopup(componentName, componentId, props) {
     },
     created() {
       window.addEventListener("keydown", this.keyDownHandler);
+      var audio = new Audio(this.place.sound ?? "./assets/click-sound.mp3");
+      audio.volume = 0.1;
+      audio.play();
     },
     destroyed() {
       window.removeEventListener("keydown", this.keyDownHandler);
