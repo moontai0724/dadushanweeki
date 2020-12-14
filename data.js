@@ -58,28 +58,6 @@ const PLACES = [
     ]
   },
   {
-    "icon": "./assets/30/icon.png",
-    "coloredIcon": "./assets/30/icon-colored.png",
-    "iconStyle": {
-      "max-width": "15%",
-      "max-height": "15%",
-      "bottom": "20%",
-      "left": "22%",
-    },
-    "title": "大肚山威靈仙",
-    "address": "",
-    "descriptions": [
-      "台灣特有種，分布在中部區域，開花期約為 5 ~ 7 月，可用於中藥材，用途為筋通脈絡、治療破傷風等。",
-    ],
-    "images": [],
-    "referances": [
-      {
-        "title": "認識植物",
-        "url": "http://kplant.biodiv.tw/%E5%A4%A7%E8%82%9A%E5%B1%B1%E5%A8%81%E9%9D%88%E4%BB%99/%E5%A4%A7%E8%82%9A%E5%B1%B1%E5%A8%81%E9%9D%88%E4%BB%99.htm"
-      },
-    ]
-  },
-  {
     "icon": "./assets/20/icon.png",
     "coloredIcon": "./assets/20/icon-colored.png",
     "iconStyle": {
@@ -111,34 +89,6 @@ const PLACES = [
     ]
   },
   {
-    "icon": "./assets/34/icon.png",
-    "coloredIcon": "./assets/34/icon-colored.png",
-    "iconStyle": {
-      "max-width": "15%",
-      "max-height": "15%",
-      "bottom": "2%",
-      "left": "20%",
-    },
-    "title": "石虎",
-    "address": "",
-    "descriptions": [
-      "分布於海拔 1000 公尺以下，純肉食性動物，主要獵捕夜間活動的鳥類、昆蟲、小型哺乳類。",
-      "近幾年因為棲息地的減少與人為的破壞，而被列為瀕臨絕種的動物。",
-      "相關的還有石虎侵擾雞舍事件。",
-    ],
-    "images": [],
-    "referances": [
-      {
-        "title": "認識石虎",
-        "url": "https://e-info.org.tw/leopardcatnews#about"
-      },
-      {
-        "title": "石虎侵擾雞舍事件",
-        "url": "https://tw.appledaily.com/supplement/20180401/7H6RERH2A5VD6BYTT6VHCMCC4M/"
-      },
-    ]
-  },
-  {
     "icon": "./assets/25/icon.png",
     "coloredIcon": "./assets/25/icon-colored.png",
     "iconStyle": {
@@ -162,6 +112,28 @@ const PLACES = [
       {
         "title": "CTWANT",
         "url": "https://www.ctwant.com/article/14002"
+      },
+    ]
+  },
+  {
+    "icon": "./assets/30/icon.png",
+    "coloredIcon": "./assets/30/icon-colored.png",
+    "iconStyle": {
+      "max-width": "15%",
+      "max-height": "15%",
+      "bottom": "20%",
+      "left": "22%",
+    },
+    "title": "大肚山威靈仙",
+    "address": "",
+    "descriptions": [
+      "台灣特有種，分布在中部區域，開花期約為 5 ~ 7 月，可用於中藥材，用途為筋通脈絡、治療破傷風等。",
+    ],
+    "images": [],
+    "referances": [
+      {
+        "title": "認識植物",
+        "url": "http://kplant.biodiv.tw/%E5%A4%A7%E8%82%9A%E5%B1%B1%E5%A8%81%E9%9D%88%E4%BB%99/%E5%A4%A7%E8%82%9A%E5%B1%B1%E5%A8%81%E9%9D%88%E4%BB%99.htm"
       },
     ]
   },
@@ -193,6 +165,34 @@ const PLACES = [
       {
         "title": "一個人與花草的生活",
         "url": "https://www.facebook.com/horng.leaf/posts/1358632510891464/"
+      },
+    ]
+  },
+  {
+    "icon": "./assets/34/icon.png",
+    "coloredIcon": "./assets/34/icon-colored.png",
+    "iconStyle": {
+      "max-width": "15%",
+      "max-height": "15%",
+      "bottom": "2%",
+      "left": "20%",
+    },
+    "title": "石虎",
+    "address": "",
+    "descriptions": [
+      "分布於海拔 1000 公尺以下，純肉食性動物，主要獵捕夜間活動的鳥類、昆蟲、小型哺乳類。",
+      "近幾年因為棲息地的減少與人為的破壞，而被列為瀕臨絕種的動物。",
+      "相關的還有石虎侵擾雞舍事件。",
+    ],
+    "images": [],
+    "referances": [
+      {
+        "title": "認識石虎",
+        "url": "https://e-info.org.tw/leopardcatnews#about"
+      },
+      {
+        "title": "石虎侵擾雞舍事件",
+        "url": "https://tw.appledaily.com/supplement/20180401/7H6RERH2A5VD6BYTT6VHCMCC4M/"
       },
     ]
   },
