@@ -1,6 +1,7 @@
 const PLACES = [
   {
     "icon": "./assets/12/icon.png",
+    "coloredIcon": "./assets/12/icon-colored.png",
     "iconStyle": {
       "max-width": "20%",
       "max-height": "20%",
@@ -29,6 +30,7 @@ const PLACES = [
   },
   {
     "icon": "./assets/17/icon.png",
+    "coloredIcon": "./assets/17/icon-colored.png",
     "iconStyle": {
       "max-width": "15%",
       "max-height": "15%",
@@ -57,6 +59,7 @@ const PLACES = [
   },
   {
     "icon": "./assets/30/icon.png",
+    "coloredIcon": "./assets/30/icon-colored.png",
     "iconStyle": {
       "max-width": "15%",
       "max-height": "15%",
@@ -78,6 +81,7 @@ const PLACES = [
   },
   {
     "icon": "./assets/20/icon.png",
+    "coloredIcon": "./assets/20/icon-colored.png",
     "iconStyle": {
       "max-width": "8%",
       "max-height": "8%",
@@ -108,6 +112,7 @@ const PLACES = [
   },
   {
     "icon": "./assets/34/icon.png",
+    "coloredIcon": "./assets/34/icon-colored.png",
     "iconStyle": {
       "max-width": "15%",
       "max-height": "15%",
@@ -135,6 +140,7 @@ const PLACES = [
   },
   {
     "icon": "./assets/25/icon.png",
+    "coloredIcon": "./assets/25/icon-colored.png",
     "iconStyle": {
       "max-width": "12%",
       "max-height": "12%",
@@ -161,6 +167,7 @@ const PLACES = [
   },
   {
     "icon": "./assets/33/icon.png",
+    "coloredIcon": "./assets/33/icon-colored.png",
     "iconStyle": {
       "max-width": "12%",
       "max-height": "12%",
@@ -191,6 +198,7 @@ const PLACES = [
   },
   {
     "icon": "./assets/35/icon.png",
+    "coloredIcon": "./assets/35/icon-colored.png",
     "iconStyle": {
       "max-width": "12%",
       "max-height": "12%",
