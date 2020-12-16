@@ -16,26 +16,11 @@ function initialize() {
         height: 1080,
       };
     },
-    methods: {
-      resizeHandler() {
-        let mountain = this.$refs.mountain;
-        this.width = mountain.width;
-        this.height = mountain.height;
-        console.log("Mountain size changed to ", this.width, this.height);
-      },
-    },
-    created() {
-      window.addEventListener("resize", this.resizeHandler);
-    },
-    destroyed() {
-      window.removeEventListener("resize", this.resizeHandler);
-    },
   });
 }
 
 function registerComponents() {
   registerPopup("popup", "template-popup", ["place"]);
-  registerPopup("about-us", "template-about-us");
 }
 
 function registerPopup(componentName, componentId, props) {
