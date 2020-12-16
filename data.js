@@ -1,5 +1,47 @@
 const PLACES = [
   {
+    "icon": "./assets/0/icon-colored.png",
+    "coloredIcon": "./assets/0/icon-colored.png",
+    "iconStyle": {
+      "max-width": "50%",
+      "max-height": "50%",
+      "top": "5%",
+      "left": "5%",
+    },
+    "title": "大肚山 wee き",
+    "address": "",
+    "descriptions": [
+      "wee き音同 wiki，主要是希望我們資料的完整性及豐富度可以如同 wiki 一般。",
+      "但卻比wiki更具互動性，進而引發瀏覽者的好奇心及興趣。",
+    ],
+    "images": [],
+    "referances": []
+  },
+  {
+    "icon": "./assets/11/icon.png",
+    "coloredIcon": "./assets/11/icon-colored.png",
+    "iconStyle": {
+      "max-width": "10%",
+      "max-height": "10%",
+      "top": "15%",
+      "right": "38%",
+    },
+    "title": "望高寮夜景公園",
+    "address": "台中市南屯區中台路601號",
+    "descriptions": [
+      "在 2020 年 6 月改建後，設備更新後並新建設派出所來改善治安，成為台中首座以夜景為主題的公園。",
+      "高處不只能眺望台中市區還能觀賞日出及日落，而下方平台新建設兩顆巨型愛心燈提供人們拍照，因此吸引大批觀光客前來朝聖。",
+      "此外公園左側還有景觀木棧道，可近距離觀賞都市風景。",
+    ],
+    "images": [],
+    "referances": [
+      {
+        "title": "台中市政府建設局",
+        "url": "https://www.construction.taichung.gov.tw/1579906/post"
+      },
+    ]
+  },
+  {
     "icon": "./assets/12/icon.png",
     "coloredIcon": "./assets/12/icon-colored.png",
     "iconStyle": {
@@ -25,6 +67,63 @@ const PLACES = [
       {
         "title": "維基百科",
         "url": "https://zh.wikipedia.org/wiki/%E7%A3%BA%E6%BA%AA%E6%9B%B8%E9%99%A2"
+      },
+    ]
+  },
+  {
+    "icon": "./assets/13/icon.png",
+    "coloredIcon": "./assets/13/icon-colored.png",
+    "iconStyle": {
+      "max-width": "15%",
+      "max-height": "15%",
+      "top": "30%",
+      "right": "34%",
+    },
+    "title": "藍色公路",
+    "address": "台中市大肚區華南路",
+    "descriptions": [
+      "夜晚沿路的藍燈加上絕美的夜景，華南路約3.5KM，晚上整條華南路的路燈都是藍色的，因而稱作「藍色公路」，非常適合沿途散步欣賞夜景以及藍色燈景。",
+    ],
+    "images": [
+      {
+        "description": "爆笑博客",
+        "url": "./assets/13/1.jpg",
+        "source": "https://www.jokeblog.tv/life/7843"
+      },
+    ],
+    "referances": []
+  },
+  {
+    "icon": "./assets/16/icon.png",
+    "coloredIcon": "./assets/16/icon-colored.png",
+    "iconStyle": {
+      "max-width": "20%",
+      "max-height": "20%",
+      "bottom": "2%",
+      "right": "45%",
+    },
+    "title": "中東海棗田和落羽松秘境",
+    "address": "台中市大肚區沙田路一段854巷35號",
+    "descriptions": [
+      "中東海棗主要生長在熱帶國家，是極具營養價值的經濟作物，常被加工為食品。",
+      "特色是樹形一致，常被用於美化環境，排在一起時宛如身在隧道，搭配樹陰間四散的陽光，讓人有種前方就是希望、未來的景色出現，成為新一代的網美打卡聖地。",
+      "<br>落羽松原產於美國東南部，被引進台灣種植。秘境位於海棗田旁，在秋冬交替之際，葉片會轉為橘紅色，場景類似加拿大的楓樹林，還因此被結婚夫妻選為拍婚紗的好去處。",
+    ],
+    "images": [
+      {
+        "description": "爆笑博客",
+        "url": "./assets/13/1.jpg",
+        "source": "https://www.jokeblog.tv/life/7843"
+      },
+    ],
+    "referances": [
+      {
+        "title": "認識植物",
+        "url": "http://kplant.biodiv.tw/%E4%B8%AD%E6%9D%B1%E6%B5%B7%E6%A3%97/%E4%B8%AD%E6%9D%B1%E6%B5%B7%E6%A3%97.htm"
+      },
+      {
+        "title": "維基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E8%90%BD%E7%BE%BD%E6%9D%89"
       },
     ]
   },
@@ -58,6 +157,35 @@ const PLACES = [
     ]
   },
   {
+    "icon": "./assets/19/icon.png",
+    "coloredIcon": "./assets/19/icon-colored.png",
+    "iconStyle": {
+      "max-width": "15%",
+      "max-height": "15%",
+      "bottom": "30%",
+      "right": "32%",
+    },
+    "title": "吵架巷",
+    "address": "台中市大肚區 瑞井社區",
+    "descriptions": [
+      "因<花甲少年等大人>劇中一段長達三分半鐘的一鏡到底片段而爆紅，片段中可看到蜘蛛人彩繪牆、瑞安宮以及保有彈孔的紅磚牆。",
+      "值得注意的是彈孔是在二戰時期，美軍反擊日本時的流彈所造成的，後來才演變成現今的彈孔紀念園區。 (P.s 二戰時期台灣被日本佔領)",
+    ],
+    "images": [
+      {
+        "description": "欣傳媒",
+        "url": "./assets/19/1.jpg",
+        "source": "https://solomo.xinmedia.com/taiwan/131974"
+      },
+    ],
+    "referances": [
+      {
+        "title": "欣傳媒",
+        "url": "https://solomo.xinmedia.com/taiwan/131974"
+      },
+    ]
+  },
+  {
     "icon": "./assets/20/icon.png",
     "coloredIcon": "./assets/20/icon-colored.png",
     "iconStyle": {
@@ -85,6 +213,35 @@ const PLACES = [
       {
         "title": "四方通行旅遊",
         "url": "https://guide.easytravel.com.tw/scenic/71091"
+      },
+    ]
+  },
+  {
+    "icon": "./assets/21/icon-colored.png",
+    "coloredIcon": "./assets/21/icon-colored.png",
+    "iconStyle": {
+      "max-width": "10%",
+      "max-height": "10%",
+      "top": "3%",
+      "right": "31%",
+    },
+    "title": "大肚王國",
+    "address": "",
+    "descriptions": [
+      "大肚王國(被荷蘭人稱為米達赫王國)，是由拍瀑拉、巴布薩、洪雅...等平埔族原住民所組成的跨部落聯盟，是有文獻以來的早期台灣政權之一，記載中學者認為大肚社曾經出現一位國王，漢人稱他為「大肚番王」，勢力最盛時，曾統治二十七個村社。",
+      "1644年佔領台灣的荷蘭人決定擴張勢力範圍，派出軍隊攻打，不料氣候不佳加上不熟悉環境而失敗，不過後來陸陸續續發動數次攻擊，大肚王國最終還是不敵猛烈的炮火而戰敗，戰敗後不久，被迫與荷蘭東印度公司簽約，表示服從。",
+      "1661鄭成功率軍撤退來台，嘗試驅逐荷蘭人，想將台灣作為反清復明的基地，攻至大肚王國時，原住民強力抵抗，因此被認為與荷蘭人一夥，所以鄭軍多次與原住民發生武裝衝突，尤其是1670年的沙轆社之役，大肚王國旗下的沙轆社更被屠殺至僅剩6人。",
+      "最終大肚王國在清領時期發生大甲西社番亂（大甲西社抗清事件）及番人治番的政策下正式宣告瓦解。"
+    ],
+    "images": [],
+    "referances": [
+      {
+        "title": "大肚王國維基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E5%A4%A7%E8%82%9A%E7%8E%8B%E5%9C%8B"
+      },
+      {
+        "title": "牛罵頭文化園區",
+        "url": "http://niumatou.taichung.gov.tw/theme03_2.html"
       },
     ]
   },
