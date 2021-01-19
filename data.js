@@ -1,30 +1,32 @@
 const PLACES = [
   {
-    "icon": "./assets/0/icon-colored.png",
-    "coloredIcon": "./assets/0/icon-colored.png",
+    "icon": "./assets/0/icon.png",
+    "coloredIcon": "./assets/0/icon.png",
     "iconStyle": {
-      "max-width": "50%",
-      "max-height": "50%",
-      "top": "5%",
-      "left": "5%",
+      "max-width": "45%",
+      "max-height": "45%",
+      "top": "-1%",
+      "left": "3%",
     },
     "title": "大肚山 wee き",
     "address": "",
     "descriptions": [
-      "wee き音同 wiki，主要是希望我們資料的完整性及豐富度可以如同 wiki 一般。",
-      "但卻比wiki更具互動性，進而引發瀏覽者的好奇心及興趣。",
+      "我們的網站叫做大肚山 wee き",
+      "此網站的功能是讓大家可以一次知道大肚山的相關事物，如特色的動植物、景點...等等，並用比較活潑的方式呈現。",
+      "取 Wiki 維基百科的諧音是希望我們的網頁如 Wiki 般資料廣泛，但又不如 Wiki 呆板無趣。",
     ],
     "images": [],
     "referances": []
   },
   {
-    "icon": "./assets/11/icon.png",
+    "icon": "./assets/11/icon-colored.png",
     "coloredIcon": "./assets/11/icon-colored.png",
     "iconStyle": {
-      "max-width": "13%",
-      "max-height": "14%",
-      "top": "15%",
+      "max-width": "21%",
+      "max-height": "21%",
+      "top": "11%",
       "right": "34%",
+      "opacity": "0.90",
     },
     "title": "望高寮夜景公園",
     "address": "台中市南屯區中台路601號",
@@ -42,13 +44,14 @@ const PLACES = [
     ]
   },
   {
-    "icon": "./assets/12/icon.png",
+    "icon": "./assets/12/icon-colored.png",
     "coloredIcon": "./assets/12/icon-colored.png",
     "iconStyle": {
-      "max-width": "22%",
-      "max-height": "22%",
+      "max-width": "21%",
+      "max-height": "21%",
       "right": "3%",
-      "top": "76%",
+      "bottom": "2%",
+      "opacity": "0.85",
     },
     "title": "磺溪書院",
     "address": "臺中市大肚區文昌路60號",
@@ -71,13 +74,14 @@ const PLACES = [
     ]
   },
   {
-    "icon": "./assets/13/icon.png",
+    "icon": "./assets/13/icon-colored.png",
     "coloredIcon": "./assets/13/icon-colored.png",
     "iconStyle": {
-      "max-width": "13%",
-      "max-height": "18%",
-      "top": "36%",
-      "right": "48%",
+      "max-width": "15%",
+      "max-height": "20%",
+      "top": "34%",
+      "right": "47%",
+      "opacity": "1.00",
     },
     "title": "藍色公路",
     "address": "台中市大肚區華南路",
@@ -94,13 +98,14 @@ const PLACES = [
     "referances": []
   },
   {
-    "icon": "./assets/16/icon.png",
+    "icon": "./assets/16/icon-colored.png",
     "coloredIcon": "./assets/16/icon-colored.png",
     "iconStyle": {
       "max-width": "20%",
       "max-height": "20%",
-      "bottom": "23%",
-      "right": "27%",
+      "bottom": "19%",
+      "right": "24%",
+      "opacity": "0.85",
     },
     "title": "中東海棗田和落羽松秘境",
     "address": "台中市大肚區沙田路一段854巷35號",
@@ -128,13 +133,14 @@ const PLACES = [
     ]
   },
   {
-    "icon": "./assets/17/icon.png",
+    "icon": "./assets/17/icon-colored.png",
     "coloredIcon": "./assets/17/icon-colored.png",
     "iconStyle": {
       "max-width": "17%",
       "max-height": "17%",
-      "bottom": "1%",
+      "bottom": "2%",
       "right": "41%",
+      "opacity": "0.85",
     },
     "title": "大肚花海",
     "address": "台中市大肚區沙田路一段旁",
@@ -157,13 +163,14 @@ const PLACES = [
     ]
   },
   {
-    "icon": "./assets/19/icon.png",
+    "icon": "./assets/19/icon-colored.png",
     "coloredIcon": "./assets/19/icon-colored.png",
     "iconStyle": {
-      "max-width": "16%",
-      "max-height": "16%",
+      "max-width": "18%",
+      "max-height": "18%",
       "bottom": "37%",
-      "right": "36%",
+      "right": "35%",
+      "opacity": "0.85",
     },
     "title": "吵架巷",
     "address": "台中市大肚區 瑞井社區",
@@ -186,13 +193,14 @@ const PLACES = [
     ]
   },
   {
-    "icon": "./assets/20/icon.png",
+    "icon": "./assets/20/icon-colored.png",
     "coloredIcon": "./assets/20/icon-colored.png",
     "iconStyle": {
-      "max-width": "14%",
-      "max-height": "14%",
+      "max-width": "15%",
+      "max-height": "15%",
       "bottom": "2%",
-      "left": "29%",
+      "left": "30%",
+      "opacity": "1.00",
     },
     "title": "九天玄女廟",
     "address": "台中市大雅區忠義村清泉路99號",
@@ -223,6 +231,7 @@ const PLACES = [
       "max-height": "15%",
       "top": "1%",
       "right": "27%",
+      "opacity": "1.00",
     },
     "title": "大肚王國",
     "address": "",
@@ -245,13 +254,14 @@ const PLACES = [
     ]
   },
   {
-    "icon": "./assets/25/icon.png",
+    "icon": "./assets/25/icon-colored.png",
     "coloredIcon": "./assets/25/icon-colored.png",
     "iconStyle": {
-      "max-width": "15%",
-      "max-height": "15%",
-      "top": "48%",
-      "left": "35%",
+      "max-width": "17%",
+      "max-height": "17%",
+      "top": "45%",
+      "left": "34%",
+      "opacity": "1.00",
     },
     "title": "火燒山",
     "address": "",
@@ -272,18 +282,20 @@ const PLACES = [
     ]
   },
   {
-    "icon": "./assets/30/icon.png",
+    "icon": "./assets/30/icon-colored.png",
     "coloredIcon": "./assets/30/icon-colored.png",
     "iconStyle": {
       "max-width": "16%",
       "max-height": "16%",
       "bottom": "0%",
       "left": "8%",
+      "opacity": "1.00",
     },
     "title": "大肚山威靈仙",
     "address": "",
     "descriptions": [
-      "台灣特有種，分布在中部區域，開花期約為 5 ~ 7 月，可用於中藥材，用途為筋通脈絡、治療破傷風等。",
+      "台灣特有種，分布於中北部海拔500以下區域。",
+      "開花期約為 5 ~ 7 月，可用於中藥材，用途為筋通脈絡、治療破傷風...等。",
     ],
     "images": [],
     "referances": [
@@ -294,13 +306,15 @@ const PLACES = [
     ]
   },
   {
-    "icon": "./assets/33/icon.png",
+    "icon": "./assets/33/icon-colored.png",
     "coloredIcon": "./assets/33/icon-colored.png",
     "iconStyle": {
       "max-width": "13%",
       "max-height": "13%",
-      "bottom": "50%",
+      "bottom": "51%",
       "right": "25%",
+      "opacity": "1.00",
+      
     },
     "title": "臺灣野梨",
     "address": "",
@@ -324,20 +338,21 @@ const PLACES = [
     ]
   },
   {
-    "icon": "./assets/34/icon.png",
+    "icon": "./assets/34/icon-colored.png",
     "coloredIcon": "./assets/34/icon-colored.png",
     "iconStyle": {
       "max-width": "16%",
       "max-height": "16%",
       "bottom": "19%",
       "left": "17%",
+      "opacity": "0.90",
     },
     "title": "石虎",
     "address": "",
     "descriptions": [
       "分布於海拔 1000 公尺以下，純肉食性動物，主要獵捕夜間活動的鳥類、昆蟲、小型哺乳類。",
       "近幾年因為棲息地的減少與人為的破壞，而被列為瀕臨絕種的動物。",
-      "相關的還有石虎侵擾雞舍事件。",
+      "如果還想多了解石虎，下方還有石虎侵擾雞舍的相關事件可以瀏覽。",
     ],
     "images": [],
     "referances": [
@@ -352,13 +367,38 @@ const PLACES = [
     ]
   },
   {
-    "icon": "./assets/35/icon.png",
+    "icon": "./assets/36/icon.png",
+    "coloredIcon": "./assets/36/icon.png",
+    "iconStyle": {
+      "max-width": "21%",
+      "max-height": "21%",
+      "bottom": "0%",
+      "right": "18%",
+      "opacity": "0.90",
+    },
+    "title": "追分車站",
+    "address": "",
+    "descriptions": [
+      "「追分」是由日文漢字而來，有分岐路的意思。因當時此車站是火車的分歧點一邊是往山線的成功車站，一邊則是沿著海線通往彰化。",
+      "此外，追分車站常吸引考生前往，因為有傳說到了這邊買  追分==>成功   的火車票，能讓你下次的目標會成功。",
+    ],
+    "images": [],
+    "referances": [
+      {
+        "title": "維基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E8%BF%BD%E5%88%86%E8%BB%8A%E7%AB%99"
+      },
+    ]
+  },
+  {
+    "icon": "./assets/35/icon-colored.png",
     "coloredIcon": "./assets/35/icon-colored.png",
     "iconStyle": {
       "max-width": "11%",
       "max-height": "11%",
       "bottom": "18%",
       "right": "39%",
+      "opacity": "0.90",
     },
     "title": "琉璃紋鳳蝶",
     "address": "",
